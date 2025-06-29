@@ -1,6 +1,6 @@
 <template>
     <div class="grid grid-cols-1 
-    sm:grid-cols-2 xl:grid-cols-3 gap-8 xl:mb-10 xl:-mt-10 mb-36 md:mb-10 lg:mb-0 ">
+    sm:grid-cols-2 xl:grid-cols-3 gap-8  xl:mb-16 xl:-mt-10 mb-36 md:mb-10 lg:mb-0 ">
         <div v-for="proj in projects" >
         <ProjCard :title="proj.title" :description="proj.description" />
     </div>
