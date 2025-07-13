@@ -1,6 +1,6 @@
 <template>
     
-    <nav class="max-sm:fixed max-sm:bottom-6  max-sm:right-0 max-sm:w-[90%] max-sm:left-1/2 max-sm:-translate-x-1/2 sm:flex-col sm:flex sm:gap-y-8 bg-[#1B263B] rounded-[70px] justify-center  sm:w-[100px] sm:h-[350px] md:h-[450px] my-auto z-10  backdrop-blur-3xl ">
+    <nav class="max-sm:fixed max-sm:bottom-6  max-sm:right-0 max-sm:w-[90%] max-sm:left-1/2 max-sm:-translate-x-1/2 sm:flex-col sm:flex sm:gap-y-8 bg-[#1B263B] rounded-[70px] justify-center  sm:w-[100px] sm:h-[350px] md:h-[450px] fixed md:top-[22.5%] sm:top-[30%] z-10  backdrop-blur-3xl ">
         <div class="max-sm:px-6 max-sm:py-8 flex sm:flex-col gap-y-4 max-sm:justify-between">
             <NuxtLink 
                 v-for="icon in linkIcons" 
