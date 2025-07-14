@@ -1,6 +1,6 @@
 <template>
     <div
-      class="block md:-mt-10 relative border-b-2 border-t-2 border-l-2 border-[#222] border-r-2 md:border-r-0 rounded-[22px] p-[22px] pr-[80px] no-underline text-[#222] overflow-hidden transition-all duration-200 group mb-32 md:mb-10"
+      class="block md:-mt-10 relative border-b-2 border-t-2 border-l-2 border-[#222] border-r-2 md:border-r-0 rounded-[22px] p-[22px] pr-[80px] no-underline text-[#222] overflow-hidden transition-all duration-200 group mb-32 md:mb-20"
       tabindex="0"
     >
       <div class="grid xl:grid-cols-[250px_1fr] pt-3 lg:gap-6">
@@ -42,7 +42,7 @@
             </div>
           </div>
 
-          <div class="hidden xl:block absolute  bottom-[20px] -right-[10px] h-[220px] w-px bg-[#222]"></div>
+          <div class="hidden xl:block absolute  bottom-[15px] -right-[10px] h-[220px] w-px bg-[#222]"></div>
         
         </div>
   
@@ -91,7 +91,10 @@
       >
         <path d="M10,0 Q-30,50 10,100" fill="none" stroke="#222" stroke-width="0.8" />
       </svg>
+      <!-- Footer text -->
+      
     </div>
+    <TheFooter class="mt-4">Skills.Certificates...</TheFooter>
   </template>
   
   <script setup lang="ts">

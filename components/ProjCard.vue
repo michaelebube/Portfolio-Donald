@@ -17,9 +17,9 @@
       </div>
       
       <svg class="absolute right-0 top-0 h-full w-12 pointer-events-none z-[2]" 
-           viewBox="0 0 10 100" 
+           viewBox="0 0 12 102" 
            preserveAspectRatio="none">
-        <path d="M10,2 Q0,50 11,100" fill="none" stroke="#222" stroke-width="0.8"/>
+        <path d="M13,2 Q-5,50 13,100" fill="none" stroke="#222" stroke-width="0.7"/>
       </svg>
     </a>
 </template>

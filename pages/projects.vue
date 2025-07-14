@@ -4,6 +4,8 @@
         <div v-for="proj in projects" >
         <ProjCard :title="proj.title" :description="proj.description" />
     </div>
+      <!-- Footer text -->
+      <TheFooter>Projects...</TheFooter>
     </div>
     
 </template>
