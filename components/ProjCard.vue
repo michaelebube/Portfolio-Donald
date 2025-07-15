@@ -3,7 +3,7 @@
        class="block relative border-b-2 border-t-2 border-l-2 border-[#222] border-r-0 rounded-[22px] p-[22px] pr-[30px] no-underline text-[#222] overflow-hidden transition-all duration-200 hover:scale-[1.02] focus:scale-[1.02] group" 
        tabindex="0">
       
-      <div class="border-b-[1.5px] border-[#222] mb-3 p-2 pr-0 pb-[8px] font-bold text-[1.1rem] leading-[1.3] sm:h-[105px] md:h-[80px]">
+      <div class="border-b-[1.5px] border-[#222] mb-3 p-2 pr-0 pb-[8px] font-bold text-[1.1rem] w-[95%] leading-[1.3] sm:h-[105px] md:h-[80px]">
         <h1>{{ title }}</h1>
       </div>
       
