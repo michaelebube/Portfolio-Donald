@@ -3,7 +3,7 @@
         <div class="flex flex-col">
             <div class="flex h-full items-center min-h-[60vh] relative">
                 <div class="w-[300px]">
-                    <h1 class="border-b-[1px] w-[85%] text-6xl pb-4 leading-16 font-semibold -mt-16">Let's get started</h1>
+                    <h1 class="border-b-[1px] w-[85%] lg:text-5xl xl:text-6xl pb-4 leading-16 font-semibold -mt-16">Let's get started</h1>
                     <div class="flex gap-1 mt-4">
                         <a href="">
                             <img src="../assets/icons/linkedin_icon.svg" alt="LinkedIn Icon" class="w-10 h-10 hover:scale-110 transition-transform duration-200">
@@ -19,46 +19,46 @@
         </div>
 
         <div class="px-12 py-10">
-            <h1 class="text-2xl text-[#1B263B] border-b-1 pb-4 border-b-[#1B263B]/20">You can reach me by filling the form below</h1>
+            <h1 class="text-xl xl:text-2xl text-[#1B263B] border-b-1 pb-4 border-b-[#1B263B]/20">You can reach me by filling the form below</h1>
             <div class=" mt-6  rounded-lg font-sans">
     <div class="flex flex-wrap items-baseline gap-2 leading-relaxed border-b-1 border-b-[#1B263B]/20 pb-8">
-      <span class="text-4xl font-semibold text-slate-800 mr-4">My name is</span>
+      <span class="text-2xl xl:text-4xl font-semibold text-slate-800 mr-4">My name is</span>
       <input 
         v-model="formData.fullName"
         type="text" 
         placeholder="YOUR FULL NAME"
-        class="bg-transparent border-0 border-b-2 border-black/40 text-black text-3xl font-medium px-0 py-2 outline-none placeholder:text-xl  tracking-wide placeholder-[#9DA0A6]  focus:border-black max-w-96 flex-1 mr-4"
+        class="bg-transparent border-0 border-b-2 border-black/40 text-black text-lg xl:text-3xl font-medium px-0 py-2 outline-none placeholder:text-xl  tracking-wide placeholder-[#9DA0A6]  focus:border-black max-w-96 flex-1 mr-4"
       />
-      <span class="text-4xl font-semibold text-slate-800">and I</span>
+      <span class="text-2xl xl:text-4xl font-semibold text-slate-800">and I</span>
       
-      <div class="w-full h-0"></div>
+      <div class="xl:w-full xl:h-0"></div>
       
-      <span class="text-4xl font-semibold text-slate-800 mr-4">have a</span>
+      <span class="text-2xl xl:text-4xl font-semibold text-slate-800 mr-4">have a</span>
       <input 
         v-model="formData.jobType"
         type="text" 
         placeholder="ONE-TIME GIG, PART-TIME JOB, FULL-TIME JOB ETC"
-        class="bg-transparent border-0 border-b-2 border-black/40 text-black font-medium text-3xl  px-0 py-2 outline-none placeholder:text-xl  tracking-wide placeholder-[#9DA0A6] focus:border-black min-w-96 flex-1 mr-4"
+        class="bg-transparent border-0 border-b-2 border-black/40 text-black font-medium text-lg xl:text-3xl  px-0 py-2 outline-none placeholder:text-xl  tracking-wide placeholder-[#9DA0A6] focus:border-black min-w-96 flex-1 mr-4"
       />
-      <span class="text-4xl font-semibold text-slate-800">that</span>
+      <span class="text-2xl xl:text-4xl font-semibold text-slate-800">that</span>
       
-      <div class="w-full h-0"></div>
+      <div class="xl:w-full xl:h-0"></div>
       
-      <span class="text-4xl font-semibold text-slate-800">needs help. You can reach me at</span>
+      <span class="text-2xl xl:text-4xl font-semibold text-slate-800">needs help. You can reach me at</span>
       
-      <div class="w-full h-0"></div>
+      <div class="xl:w-full xl:h-0"></div>
       
       <input 
         v-model="formData.email"
         type="email" 
         placeholder="YOUR EMAIL ADDRESS"
-        class="bg-transparent border-0 border-b-2 border-black/40 text-black font-medium text-3xl  px-0 py-2 outline-none placeholder:text-xl tracking-wide placeholder-[#9DA0A6]  focus:border-black max-w-130 flex-1 mr-4"
+        class="bg-transparent border-0 border-b-2 border-black/40 text-black font-medium text-lg xl:text-3xl  px-0 py-2 outline-none placeholder:text-xl tracking-wide placeholder-[#9DA0A6]  focus:border-black max-w-130 flex-1 mr-4"
       />
-      <span class="text-4xl font-semibold text-slate-800">to get</span>
+      <span class="text-2xl xl:text-4xl font-semibold text-slate-800">to get</span>
       
       <div class="w-full h-0"></div>
       
-      <span class="text-4xl font-semibold text-slate-800">things started.</span>
+      <span class="text-2xl xl:text-4xl font-semibold text-slate-800">things started.</span>
     </div>
   </div>
   <div class="relative mt-6">
@@ -125,7 +125,7 @@ const handleSubmit = async () => {
   message.value = ''
 
   
-  if(!formData.fullName || !formData.jobType || !formData.email) {
+  if(!formData.fullName && !formData.jobType &&!formData.email) {
     message.value = 'Please fill in all fields'
     messageClass.value = 'text-red-700 bg-transparent rounded-lg  border border-red-700'
     return
@@ -153,7 +153,7 @@ const handleSubmit = async () => {
   
   if (!isValidEmail(formData.email)) {
     message.value = 'Please enter a valid email address'
-    messageClass.value = 'text-red-900 bg-red-50 border border-red-900'
+    messageClass.value = 'text-red-700 bg-transparent border border-red-700'
     return
   }
 
