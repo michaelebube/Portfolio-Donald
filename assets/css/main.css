@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+
+.blur-page-leave-active {
+    transition: all 0.4s;
+   
+}
+
+.blur-page-enter-active{
+    transition: all 0.4s;
+    
+}
+
+.blur-page-enter-from,
+.blur-page-leave-to {
+    opacity: 0;
+    filter: blur(1rem);
+    
+}

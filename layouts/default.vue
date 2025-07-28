@@ -9,19 +9,32 @@
         </header>
 
         <!-- Main Content Area -->
+
         <div class="px-4 sm:px-6 md:px-12 lg:px-16 xl:px-14  sm:gap-x-8 lg:gap-x-10  ">
             <DashboardNav />
-            <div class="sm:ml-[100px] md:ml-[120px] pb-4    sm:pl-5" >
-                <slot></slot>
+            <Transition name="blur-page" mode="out-in">
+            <div :key="route.fullPath" class="sm:ml-[100px] md:ml-[120px] pb-4 sm:pl-5 page-wrapper" >
+                 
+                    <slot></slot>
+                
+        
             </div>
+            </Transition>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
+
+
+const route = useRoute()
+
 </script>
 
 <style>
+
+
+
 .bg-container {
     position: relative;
 }
@@ -51,4 +64,6 @@
     opacity: 0.1;
     z-index: -1;
 }
+
+
 </style>
