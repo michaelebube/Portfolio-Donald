@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+@custom-variant limitedHeight (@media (min-height: 768px) and (max-width: 1024px));
 
 .blur-page-leave-active {
     transition: all 0.4s;
@@ -17,3 +18,4 @@
     filter: blur(1rem);
     
 }
+
