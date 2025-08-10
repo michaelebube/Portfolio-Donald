@@ -31,7 +31,7 @@ const route = useRoute()
 
 </script>
 
-<style>
+<style scoped>
 
 
 
