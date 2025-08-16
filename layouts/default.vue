@@ -1,10 +1,10 @@
 <template>
     <div class="w-full min-h-screen bg-container relative">
         <!-- Header/Navbar -->
-        <header class="w-full p-4 sm:p-6 md:p-10 lg:p-16 xl:px-14 xl:py-10 pb-0">
+        <header class="w-full p-5 sm:p-6 md:p-10 lg:p-16 xl:px-14 xl:py-10 pb-0">
             <div class="flex justify-between items-center mb-8">
-                <div class="text-sm md:text-[16px] lg:text-lg  border-b-3 text-[#343A40]">KED</div>
-                <div class="text-sm md:text-[16px] lg:text-lg border-b-3 text-[#343A40]">Data Analyst</div>
+                <div class="text-sm md:text-[16px] lg:text-lg  border-b-3 text-[#343A40] font-family-handwriting">KED</div>
+                <div class="text-sm md:text-[16px] lg:text-lg border-b-3 text-[#343A40] font-family-handwriting">Data Analyst</div>
             </div>
         </header>
 

@@ -2,20 +2,50 @@
 
 @custom-variant limitedHeight (@media (min-height: 768px) and (max-width: 1024px));
 
+
+:root {
+    --font-instrument: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-caveat: 'Caveat', cursive;
+}
+
+@theme {
+    --font-family-sans: var(--font-instrument);
+    --font-family-handwriting: var(--font-caveat);
+}
+
+@layer base {
+
+    html,
+    body {
+        font-family: var(--font-instrument);
+    }
+}
+
+/* Force all page content to be hidden initially */
+.blur-page-enter-from {
+    opacity: 0 !important;
+    filter: blur(1rem) !important;
+    visibility: hidden;
+}
+
+.blur-page-enter-active {
+    transition: all 0.4s;
+    visibility: visible;
+}
+
 .blur-page-leave-active {
-    transition: all 0.4s;
-   
+    transition: all 0.01s;
+    visibility: hidden;
 }
 
-.blur-page-enter-active{
-    transition: all 0.4s;
-  
+.blur-page-enter-to,
+.blur-page-leave-from {
+    opacity: 1;
+    filter: blur(0);
+    visibility: visible;
 }
 
-.blur-page-enter-from,
 .blur-page-leave-to {
     opacity: 0;
     filter: blur(1rem);
-    
 }
-

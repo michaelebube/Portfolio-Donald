@@ -1,6 +1,6 @@
 <template>
     <div class="grid grid-cols-1 
-    sm:grid-cols-2 xl:grid-cols-3 gap-8  xl:mb-16 xl:-mt-10 mb-36 md:mb-10 lg:mb-0 ">
+    sm:grid-cols-2 xl:grid-cols-3 gap-8   xl:mb-16 lg:-mt-[3%] xl:-mt-[1%] mb-36 md:mb-10 lg:mb-0 ">
         <div v-for="proj in projects" >
         <ProjCard :title="proj.title" :description="proj.description" />
     </div>
@@ -17,7 +17,7 @@ const projects = [ {
 },
 {
     title: "Covid-19 Case Study – Africa Edition" ,
-    description: "This case study explores which African countries managed the pandemic well and which struggled, to highlight gaps in resources and preparedness"
+    description: "This case study explores which African countries managed the pandemic well and which struggled, to highlight gaps in resources and preparedness."
 },
 {
     title: "AirBnB Case Study for Real Estate Zone",
@@ -25,7 +25,7 @@ const projects = [ {
 },
 {
     title: "Health-Substance-Abuse-Analysis",
-    description: "This analysis aims at providing insights on the substances that are most consumed by patients, average recovery rate and how best to help these individuals (patients) to recover"
+    description: "This analysis aims at providing insights on the substances that are most consumed by patients, average recovery rate and how best to help these individuals (patients) to recover."
 },
 {
     title: "Plato’s Pizza Place Report",
