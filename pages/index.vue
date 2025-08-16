@@ -7,8 +7,8 @@
       :class="{ 'opacity-0': !splashVisible }"
     >
       <div class="text-center">
-        <div class="absolute top-8 left-4 sm:left-[calc(1rem+30px-1.5ch)] md:left-[calc(1rem+50px-1.5ch)] lg:left-[calc(2rem+50px-1.5ch)] xl:left-[calc(3rem+60px-1.5ch)] md:text-[16px] lg:text-xl border-b-3 text-[#343A40] z-10">KED</div>
-        <div class="absolute bottom-8 right-8 md:right-[calc(1rem+50px-1.5ch)] lg:right-[calc(1rem+50px-1.5ch)] xl:right-[calc(2rem+60px-1.5ch)] border-b-3 text-[#343A40] z-10">Data Analyst</div>
+        <div class="absolute top-8 left-4 sm:left-[calc(1rem+30px-1.5ch)] md:left-[calc(1rem+50px-1.5ch)] lg:left-[calc(2rem+50px-1.5ch)] xl:left-[calc(3rem+60px-1.5ch)] md:text-[16px] lg:text-xl border-b-3 text-[#343A40] z-10 font-family-handwriting">KED</div>
+        <div class="absolute bottom-8 right-8 md:right-[calc(1rem+50px-1.5ch)] lg:right-[calc(1rem+50px-1.5ch)] xl:right-[calc(2rem+60px-1.5ch)] border-b-3 text-[#343A40] z-10 font-family-handwriting">Data Analyst</div>
         
         <!-- Loading animation -->
         <div class="flex items-center justify-center">

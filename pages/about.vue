@@ -1,5 +1,5 @@
 <template>
-    <div class=" pb-24 sm:pt-5 mt-30  md:pt-10   xl:-mt-20 text-[#1B263B] text-wrap 3xl:text-3xl xl:text-[17px] lg:text-lg md:text-lg sm:text-sm  ">
+    <div class=" pb-24 sm:pt-5 mt-35  md:pt-10   xl:-mt-[-2%] 2xl:-mt-[2%]   text-[#1B263B] text-wrap 3xl:text-3xl xl:text-[17px] lg:text-lg md:text-lg sm:text-sm px-2 md:px-0">
         <!-- Text content with right padding to avoid image overlap -->
         <div class="   xl:mr-54">
             <p class="xl:mb-8 lg:mb-6  mb-4"> As I was saying, I'm <span class="font-bold">Donald Ebube</span>, a Data Analyst who transforms <span class="font-bold">raw data</span> into <span class="font-bold">
@@ -36,22 +36,44 @@
         <!-- Image positioned absolutely -->
         <div>
             <img 
+            ref="profileImage"
                 src="../assets/img/Profile-Pic.png" 
-                class="absolute top-22 w-16
+             class="absolute top-22 xl:top-36 2xl:top-32 w-16
                 -translate-x-1/2 sm:w-28 md:w-auto md:-translate-x-1/2 left-1/2 xl:left-auto
-              md:top-28 lg:h-50 lg:w-auto  xl:h-66 xl:w-auto xl:w- md:h-42  md:block    xl:translate-x-0
-                 xl:right-[calc(2rem+60px-1.5ch)] " 
+                md:top-28 lg:h-50 lg:w-auto xl:h-66 xl:w-auto md:h-42 md:block xl:translate-x-0
+                xl:right-[calc(2rem+60px-1.5ch)]
+                opacity-0 transition-opacity duration-300
+                " 
                 alt="Donald Ebube Profile Picture"
             />
         </div>
 
         <!-- Footer text -->
-        <div class="absolute bottom-8 right-8 md:right-[calc(1rem+50px-1.5ch)] lg:right-[calc(1rem+50px-1.5ch)] xl:right-[calc(2rem+60px-1.5ch)] sm:text-2xl md:text-4xl xl:text-5xl font-semibold opacity-10">
-            About Me...
-        </div>
+       <TheFooter>About me...</TheFooter>
     </div>
 </template>
 
 <script setup lang="ts">
+const profileImage = useTemplateRef('profileImage')
 
+onMounted(() => {
+    
+    setTimeout(() => {
+        if (profileImage.value) {
+            profileImage.value.classList.remove('opacity-0')
+            profileImage.value.classList.add('opacity-100')
+        }
+    }, 400)
+})
+
+onBeforeRouteLeave((to, from, next) => {
+    if (profileImage.value) {
+        profileImage.value.classList.remove('opacity-100')
+        profileImage.value.classList.add('opacity-0')
+    }
+    // Small delay to let image fade out before navigation
+    setTimeout(() => {
+        next()
+    }, 200)
+})
 </script>
