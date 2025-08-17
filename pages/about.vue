@@ -38,7 +38,7 @@
             <img 
             ref="profileImage"
                 src="../assets/img/Profile-Pic.png" 
-             class="absolute top-22 xl:top-36 2xl:top-32 height-3xl:top-[170px] w-16
+             class="absolute top-22 xl:top-36 2xl:top-32 height-3xl:top-[178px] w-16
                 -translate-x-1/2 sm:w-28 md:w-auto md:-translate-x-1/2 left-1/2 xl:left-auto
                 md:top-28 lg:h-50 lg:w-auto xl:h-66 xl:w-auto md:h-42 md:block xl:translate-x-0
                 xl:right-[calc(2rem+60px-1.5ch)]
