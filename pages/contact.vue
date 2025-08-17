@@ -37,8 +37,8 @@
       <input 
         v-model="formData.jobType"
         type="text" 
-        placeholder="ONE-TIME GIG, PART-TIME JOB, FULL-TIME JOB ETC"
-        class="bg-transparent border-0 border-b-2 placeholder:text-sm border-black/40 text-black font-medium text-lg xl:text-3xl  px-0 pt-2   pb-1 md:pt-0 py-2 placeholder:md:text-sm placeholder:lg:text-lg  outline-none placeholder:xl:text-xl  tracking-wide placeholder-[#9DA0A6] focus:border-black min-w-100  md:flex-1 mr-4"
+        placeholder="ONE-TIME GIG, PART-TIME OR FULL-TIME JOB ETC"
+        class="bg-transparent border-0 border-b-2 placeholder:text-xs border-black/40 text-black font-medium text-lg xl:text-3xl  px-0 pt-2   pb-1 md:pt-0 py-2 placeholder:md:text-sm placeholder:lg:text-lg  outline-none placeholder:xl:text-xl  tracking-wide placeholder-[#9DA0A6] focus:border-black min-w-100  md:flex-1 mr-4"
       />
       <span class="text-lg lg:text-2xl  pt-5 md:pt-2 xl:text-4xl font-semibold text-slate-800 mr-1   md:mr-0">that</span><span class="text-lg lg:text-2xl lg:mt-3   xl:text-4xl mt-2 font-semibold text-slate-800 mr-2 md:mr-0"> needs help. You can reach me at</span>
       
