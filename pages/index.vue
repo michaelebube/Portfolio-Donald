@@ -26,12 +26,10 @@ import { gsap } from 'gsap'
 const router = useRouter()
 const showSplash = ref(true)
 const splashVisible = ref(true)
-const typewriterText = ref<HTMLElement | null>(null)
-const cursor = ref<HTMLElement | null>(null)
+const typewriterText = useTemplateRef('typewriterText');
+const cursor = useTemplateRef('cursor');
 
 onMounted(() => {
-  
-  // Wait for next tick to ensure DOM is ready
   nextTick(() => {
     // GSAP Typewriter Animation
     const text = "Hi, I'm Donald. I'm a data analyst..."
@@ -57,7 +55,7 @@ onMounted(() => {
     
     // Typewriter effect
     gsap.to({}, {
-      duration: text.length * 0.1, // Adjust speed here (0.1s per character)
+      duration: text.length * 0.1, 
       ease: "none",
       onUpdate: function() {
         const progress = this.progress()
@@ -77,7 +75,7 @@ onMounted(() => {
     setTimeout(() => {
       showSplash.value = false
       router.push('/about')
-    }, 6500) // Reduced from 8000 to 6500 for quicker transition
+    }, 6000) 
   })
 })
 

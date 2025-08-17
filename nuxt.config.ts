@@ -37,5 +37,6 @@ export default defineNuxtConfig({
     optimizeDeps: {
       include: ['vite-svg-loader']
     }
-  }
+  },
+  
 })

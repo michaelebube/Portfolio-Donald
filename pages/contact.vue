@@ -54,12 +54,12 @@
       
       <div class="md:w-full md:h-0"></div>
 
-      <span class="text-lg pt-4 md:pt-0 lg:text-2xl ml-2  xl:text-4xl font-semibold text-slate-800">things started.</span>
+      <span class="text-lg pt-4 md:pt-0 lg:text-2xl md:ml-2  xl:text-4xl font-semibold text-slate-800">things started.</span>
     </div>
   </div>
   
   <!-- Fixed message container with better positioning -->
-  <div class="relative mt-6 pb-16">
+  <div class="relative mt-6 pb-20">
     <button 
       @click="handleSubmit" 
       :disabled="isSubmitting"
@@ -73,7 +73,7 @@
     <div 
       v-if="message" 
       :class="messageClass" 
-      class="absolute left-0 top-8 mt-3 w-full max-w-md p-3 rounded-lg transition-all duration-300 z-50 shadow-md"
+      class="absolute left-0 top-6 sm:top-7 mt-3 w-full max-w-md p-3 rounded-lg transition-all duration-300 z-50 shadow-md"
     >
       {{ message }}
     </div>
