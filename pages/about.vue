@@ -1,5 +1,5 @@
 <template>
-    <div class=" pb-24 sm:pt-5 mt-35  md:pt-10   xl:-mt-[-2%] 2xl:-mt-[2%]   text-[#1B263B] text-wrap 3xl:text-3xl xl:text-[17px] lg:text-lg md:text-lg sm:text-sm px-2 md:px-0">
+    <div class=" pb-24 sm:pt-5 mt-35  md:pt-10   xl:-mt-[-2%] 2xl:-mt-[2%] 3xl:mt-[4%] text-[#1B263B] text-wrap 3xl:text-3xl xl:text-[17px] lg:text-lg md:text-lg sm:text-sm px-2 md:px-0">
         <!-- Text content with right padding to avoid image overlap -->
         <div class="   xl:mr-54">
             <p class="xl:mb-8 lg:mb-6  mb-4 tracking-normal"> As I was saying, I'm <span class="font-bold">Donald Ebube</span>, a Data Analyst who transforms <span class="font-bold">raw data</span> into <span class="font-bold">

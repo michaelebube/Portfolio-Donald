@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full min-h-screen bg-container relative">
+    <div  class="w-full min-h-screen bg-container relative">
         <!-- Header/Navbar -->
         <header class="w-full p-5 sm:p-6 md:p-10 lg:p-16 xl:px-14 xl:py-10 pb-0">
             <div class="flex justify-between items-center mb-8">
@@ -33,10 +33,9 @@ import { Analytics } from '@vercel/analytics/nuxt'
 
 const route = useRoute()
 
-const router = useRouter()
 
-const goToSplash = () => {
-  router.push('/')
+const goToSplash = async () => {
+    await navigateTo('/')
 }
 </script>
 
