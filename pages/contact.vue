@@ -27,7 +27,7 @@
         v-model="formData.fullName"
         type="text" 
         placeholder="YOUR FULL NAME"
-        class="bg-transparent border-0 border-b-2 text-lg border-black/40 text-black    lg:text-3xl font-medium px-0 py-2 outline-none placeholder:text- xs placeholder:xl:text-xl placeholder:lg:text-lg placeholder:md:text-sm tracking-wide placeholder-[#9DA0A6]  focus:border-black max-w-100 flex-1 mr-4"
+        class="bg-transparent border-0 border-b-2 text-lg border-black/40 text-black    lg:text-3xl font-medium px-0 py-2 outline-none placeholder:text-xs placeholder:xl:text-xl placeholder:lg:text-lg placeholder:md:text-sm tracking-wide placeholder-[#9DA0A6]  focus:border-black max-w-100 flex-1 mr-4"
       />
       <span class="text-lg pt-4 md:pt-0 lg:text-2xl  xl:text-4xl font-semibold text-slate-800 mr-1 md:mr-0">and I</span>
       
@@ -50,7 +50,7 @@
         placeholder="YOUR EMAIL ADDRESS"
         class="bg-transparent border-0 border-b-2 border-black/40 text-black font-medium text-lg xl:text-3xl  px-0 py-1 md:py-2 outline-none pt-3 placeholder:text-xs placeholder:md:text-sm placeholder:lg:text-lg placeholder:xl:text-xl tracking-wide placeholder-[#9DA0A6]  focus:border-black w-60  sm:max-w-130 flex-1 mr-4"
       />
-      <span class="text-lg lg:text-2xl   xl:text-4xl font-semibold text-slate-800">to get</span>
+      <span class="text-lg lg:text-2xl   xl:text-4xl font-semibold text-slate-800 sm:mr-1 md:mr-0">to get</span>
       
       <div class="md:w-full md:h-0"></div>
 
