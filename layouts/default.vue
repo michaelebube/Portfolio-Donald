@@ -3,8 +3,8 @@
         <!-- Header/Navbar -->
         <header class="w-full p-5 sm:p-6 md:p-10 lg:p-16 xl:px-14 xl:py-10 pb-0">
             <div class="flex justify-between items-center mb-8">
-                <div class="text-sm md:text-[16px] lg:text-lg  border-b-3 text-[#343A40] font-family-handwriting">KED</div>
-                <div class="text-sm md:text-[16px] lg:text-lg border-b-3 text-[#343A40] font-family-handwriting">Data Analyst</div>
+                <div @click="goToSplash" class="text-sm md:text-[16px] lg:text-lg cursor-pointer border-b-3 text-[#343A40] font-family-handwriting">KED</div>
+                <div  @click="goToSplash" class="text-sm md:text-[16px] lg:text-lg cursor-pointer border-b-3 text-[#343A40] font-family-handwriting">Data Analyst</div>
             </div>
         </header>
 
@@ -30,8 +30,14 @@
 import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 import { Analytics } from '@vercel/analytics/nuxt'
 
+
 const route = useRoute()
 
+const router = useRouter()
+
+const goToSplash = () => {
+  router.push('/')
+}
 </script>
 
 <style scoped>
