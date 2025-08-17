@@ -1,9 +1,9 @@
 <template>
     <div
-      class="block md:-mt-10 xl:-mt-10 2xl:-mt-8 relative border-b-2 border-t-2 border-l-2 border-[#222] border-r-2 md:border-r-0 rounded-[22px] p-[22px] pr-[80px] no-underline text-[#222] overflow-hidden transition-all duration-200 group mb-32 md:mb-20 mx-2 md:mx-0"
+      class="block md:-mt-10 xl:-mt-10 2xl:-mt-8 relative border-b-2 border-t-2 border-l-2 border-[#222] border-r-2 md:border-r-0 rounded-[22px] p-[22px] pr-[80px] no-underline text-[#222] overflow-hidden transition-all duration-200 group mb-32 md:mb-20 mx-2 md:mx-0 height-3xl:mt-[4%]"
       tabindex="0"
     >
-      <div class="grid xl:grid-cols-[250px_1fr] pt-3 lg:gap-6">
+      <div class="grid xl:grid-cols-[250px_1fr] pt-3  lg:gap-6">
         <div class="flex flex-col md:gap-6 text-[#1B263B] relative">
           <!-- Tools Section -->
           <div class="flex-col xl:h-[270px] relative">
