@@ -1,5 +1,5 @@
 <template>
-    <div class="grid lg:grid-cols-[300px_1fr]  md:grid-cols-[200px_1fr] lg:mx-4 grid-cols-1 px-2 md:px-0 mb-32  height-3xl:mt-[4.5%] relative  "> 
+    <div class="grid lg:grid-cols-[300px_1fr]  md:grid-cols-[200px_1fr] lg:mx-4 grid-cols-1 px-2 md:px-0 mb-32  height-3xl:mt-[4%] relative  "> 
         <div class="flex flex-col">
             <div class="flex h-full items-center mt-10 md:mt-0 md:min-h-[60vh] relative">
                 <div class="md:w-full w-[320px] max-w-[360px]">
@@ -79,8 +79,9 @@
     </div>
   </div>
         </div>
-        <TheFooter>Contact Ked...</TheFooter>
+        
     </div>
+    <TheFooter>Contact Ked...</TheFooter>
 </template>
 
 <script setup lang="ts">
