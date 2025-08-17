@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @custom-variant limitedHeight (@media (min-height: 768px) and (max-width: 1024px));
-@custom-variant height-3xl (min-width: 1400px) and (min-height: 865px);
+@custom-variant height-3xl (@media(min-width: 1400px) and (min-height: 865px));
 
 
 :root {
