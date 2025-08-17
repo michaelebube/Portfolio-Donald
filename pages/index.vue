@@ -12,8 +12,8 @@
         
         <!-- Loading animation -->
         <div class="flex items-center justify-center">
-          <h1 ref="typewriterText" class="text-[22px] sm:text-4xl lg:text-5xl md:text-4xl font-semibold text-[#343A40]"></h1>
-          <span ref="cursor" class="text-5xl font-semibold text-[#343A40] ml-1">|</span>
+          <h1 ref="typewriterText" class="text-[22px] sm:text-4xl lg:text-5xl  font-semibold text-[#343A40]"></h1>
+          <span ref="cursor" class="text-[22px] sm:text-4xl lg:text-5xl font-semibold text-[#343A40] ml-1">|</span>
         </div>
       </div>
     </div>
