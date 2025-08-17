@@ -5,10 +5,10 @@
                 <div class="md:w-full w-[320px] max-w-[360px]">
                     <h1 class="border-b-[1px] pb-1 w-[85%] text-[32px] md:text-3xl lg:text-5xl xl:text-6xl lg:pb-4 md:pb-2 md:leading-12 lg:leading-16 font-semibold lg:-mt-30 md:-mt-5">Let's get started</h1>
                     <div class="flex gap-1 mt-4">
-                        <a href="">
+                        <a href="https://www.linkedin.com/in/donald-kenechukwu-ebube" target="_blank" rel="noopener noreferrer">
                             <img src="../assets/icons/linkedin_icon.svg" alt="LinkedIn Icon" class="w-8 h-8  lg:w-10 lg:h-10 hover:scale-110 transition-transform duration-200">
                         </a>
-                        <a href="">
+                        <a href="https://github.com/donaldebube" target="_blank" rel="noopener noreferrer">
                             <img src="../assets/icons/github_icon.svg" alt="GitHub Icon" class="w-8 h-8 lg:w-10 lg:h-10 hover:scale-110 transition-transform duration-200">
                         </a>
                     </div>
