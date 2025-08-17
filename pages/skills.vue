@@ -72,10 +72,12 @@
               <div>
                 <h1
                   v-for="certificate in Certificates"
-                  :key="certificate"
-                  class="text-[16px]  mb-2"
+                  :key="certificate.title"
+                  class="text-[16px]  mb-2 hover:scale-105 transition-transform duration-200 hover:text-blue-500"
                 >
-                  {{ certificate }}
+                  <a :href="certificate.url" target="_blank" rel="noopener noreferrer">
+                    {{ certificate.title }}
+                  </a>
                 </h1>
               </div>
             </div>
@@ -137,10 +139,17 @@
     }
   ];
   
-  const Certificates = [
-    "Google Data Analytics Professional Certificate",
-    "Google Business Intelligence Professional Certificate",
-    "Google Cloud Data Analytics Professional Certificate"
-  ];
+  const Certificates = [{
+    title: "Google Data Analytics Professional Certificate",
+    url: "https://coursera.org/share/1a5bbcf96e2c478114b0deabf6bf3911"
+  },
+  {
+    title: "Google Business Intelligence Professional Certificate",
+    url: "https://coursera.org/share/77ebad7fcf4ab9be292a497c6795f656"
+  },
+  {
+    title: "Google Cloud Data Analytics Professional Certificate",
+    url: "https://coursera.org/share/3b6bbdf9f07d7a84d89f677fbd34b0f1"
+  }];
   </script>
   
