@@ -1,7 +1,7 @@
 <template>
     <div class="grid lg:grid-cols-[300px_1fr]  md:grid-cols-[200px_1fr] lg:mx-4 grid-cols-1 px-2 md:px-0 mb-32    "> 
         <div class="flex flex-col">
-            <div class="flex h-full items-center mt-10 height3xl:mt-[4%] md:mt-0 md:min-h-[60vh] relative">
+            <div class="flex h-full items-center mt-10 height-3xl:mt-[4%] md:mt-0 md:min-h-[60vh] relative">
                 <div class="md:w-full w-[320px] max-w-[360px]">
                     <h1 class="border-b-[1px] pb-1 w-[85%] text-[32px] md:text-3xl lg:text-5xl xl:text-6xl lg:pb-4 md:pb-2 md:leading-12 lg:leading-16 font-semibold lg:-mt-30 md:-mt-5">Let's get started</h1>
                     <div class="flex gap-1 mt-4">
