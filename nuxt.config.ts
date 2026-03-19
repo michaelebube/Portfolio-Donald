@@ -12,6 +12,11 @@ export default defineNuxtConfig({
           rel: 'preconnect',
           href: 'https://fonts.googleapis.com'
         },
+         {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/KED_Favicon.jpg'
+      },
         {
           rel: 'preconnect',
           href: 'https://fonts.gstatic.com',
